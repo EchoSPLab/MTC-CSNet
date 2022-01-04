@@ -1,5 +1,4 @@
 # DBD-Net
-<<<<<<< HEAD
 This repository is the `pytorch` code for our paper `"DBD-Net: A Dual-Branch Decoding Network for Noisy Image Compressed Sensing"`.  
 For any questions, feel free to contact us: shen65536@mail.nwpu.edu.cn  
 ## 1. Introduction ##
@@ -27,6 +26,3 @@ Project structure:
 ```
 
 ```
-=======
-A Dual-Branch Decoding Network for Noisy Image Compressed Sensing
->>>>>>> origin
