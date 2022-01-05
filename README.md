@@ -28,6 +28,13 @@ We adopt the [`BSDS500`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vis
 |            |-... (Same as Set5)  
 |        |-Manga109 (.png)  
 |            |-... (Same as Set5)  
+|-gene_images (*Note*: This folder will appear after the testing.)
+|    |-Set5
+|        |-recon
+|            |-... (Testing results .png)
+|        |-sum.txt
+|        |-details.txt
+|    |-... (Testing sets)
 |-models
 |    |-__init__.py  
 |    |-method.py  
@@ -90,7 +97,7 @@ sh train.sh
 ```
 python test.py --device 0 --rate 0.1
 ```  
-* For ease of use, this command will perform image sampling and reconstruction upon `all the test datasets` at `one sampling rate`. This is an example of the test results from the command line:  
+* For convenience of testing, this command will perform image sampling and reconstruction upon `all the test datasets` at `one sampling rate`. This is an example of the test results from the command line:  
 ```
 Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
 Loading model from: /usr/local/Caskroom/miniconda/base/envs/DL/lib/python3.8/site-packages/lpips/weights/v0.1/alex.pth
@@ -112,3 +119,7 @@ b    baby.png
 
 Set5 test done.
 ```
+* After that, the results of all tests will be saved to `./gene_images/`. `recon` folder includes all the reconstructed images, `sum.txt` shows the average results of the test set, `detail.txt` shows the Each result of the test set.  
+## End ##  
+
+We appreciate your reading and attention. If you want to see more results and details about our DBD-Net, please refer to our paper.  
