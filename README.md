@@ -47,8 +47,9 @@ We adopt the [`BSDS500`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vis
 |    |-__init__.py  
 |    |-config.py  
 |    |-loader.py  
-|-eval.py  
+|-test.py  
 |-train.py
+|-train.sh
 ```
 
 **3) Competting methods**  
@@ -60,8 +61,8 @@ We adopt the [`BSDS500`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vis
 | ![GSR](https://latex.codecogs.com/svg.image?\textbf{GSR}) | [Trans. Image Process.](https://ieeexplore.ieee.org/document/6814320) | Traditional algorithm |
 | ![ReconNet](https://latex.codecogs.com/svg.image?\textbf{ReconNet})| [Conf. Comput. Vis. Pattern Recog.](https://ieeexplore.ieee.org/document/7780424/) | Deep-learning Model |
 | ![ISTA-Net (plus)](https://latex.codecogs.com/svg.image?\textbf{ISTA-Net}^{&plus;}) | [Conf. Comput. Vis. Pattern Recog.](https://ieeexplore.ieee.org/document/8578294) | Deep-learning Model |
-| ![CSNet (plus)](https://latex.codecogs.com/svg.image?\textbf{CSNet}^{&plus;}) | [Trans. Image Process.](https://ieeexplore.ieee.org/document/8765626/) | Deep-learning Model |
 | ![AMP-Net-9BM](https://latex.codecogs.com/svg.image?\textbf{AMP-Net-9BM}) | [Trans. Image Process.](https://ieeexplore.ieee.org/document/9298950) | Deep-learning Model |
+| ![CSNet (plus)](https://latex.codecogs.com/svg.image?\textbf{CSNet}^{&plus;}) | [Trans. Image Process.](https://ieeexplore.ieee.org/document/8765626/) | Deep-learning Model |
 
 **4) Performance demonstrates**  
 
