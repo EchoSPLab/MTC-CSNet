@@ -33,10 +33,9 @@ DBD-Net
 |    |-method.py  
 |    |-module.py  
 |-results  
+|    |-1  
 |    |-4  
-|    |-10  
-|    |-25  
-|    |-... (sampling rates)
+|    |-... (Sampling rates)
 |-utils 
 |    |-__init__.py  
 |    |-config.py  
