@@ -4,11 +4,11 @@ For any questions, feel free to contact us: shen65536@mail.nwpu.edu.cn
 ## 1. Introduction ##
 **1) Settings**  
 
-We adopt the [`BSDS500`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html) as the training set. The tests (in channel-by-channel manner) are conducted using the [`Set5`](http://people.rennes.inria.fr/Aline.Roumy/results/SR_BMVC12.html), [`Set14`](https://huggingface.co/datasets/eugenesiow/Set14), [`CBSD68`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/) and [`Manga109`](http://www.manga109.org/en/) datasets. DBD-Net is trained for 100 epochs with a batch size of 32. The optimization algorithm employed for training is Adam with a schedule of learning rates. The learning rate is set as 10−3 for the first 50 epochs, 10−4 for epochs 51 to 75, and 10−5 for the final 25 epochs. We conduct model preservation via verification on [`Set11`](https://github.com/KuldeepKulkarni/ReconNet) after every training epoch. Our method is implemented on a platform with the PyTorch 1.9.0 framework, an Intel Core i7-11700 @ 2.50 GHz CPU and a GeForce RTX 3090 GPU with 24 GB RAM.  
+We adopt the [`BSDS500`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html) as the training set. The tests (in channel-by-channel manner) are conducted using the [`Set5`](http://people.rennes.inria.fr/Aline.Roumy/results/SR_BMVC12.html), [`Set14`](https://huggingface.co/datasets/eugenesiow/Set14), [`CBSD68`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/) and [`Manga109`](http://www.manga109.org/en/) datasets. DBD-Net is trained for 100 epochs with a batch size of 32. The optimization algorithm employed for training is Adam with a schedule of learning rates. The learning rate is set as 10−3 for the first 50 epochs, 10−4 for epochs 51 to 75, and 10−5 for the final 25 epochs. We conduct model preservation via verification on [`Set11`](https://github.com/KuldeepKulkarni/ReconNet) after every training epoch. Our method is implemented on a Ubuntu platform with the PyTorch 1.9.0 framework, an Intel Core i7-11700 @ 2.50 GHz CPU and a GeForce RTX 3090 GPU with 24 GB RAM.  
 
 **2）Project structure**
 ```
-DBD-Net
+(DBD-Net)
 |-dataset
 |    |-train  
 |        |-BSDS500 (.jpg)  
@@ -70,4 +70,45 @@ DBD-Net
 
 <div align=center><img src="https://github.com/EchoSPLab/DBD-Net/blob/master/demo_images/boxes.png"/></div>  
 
-## 2. Useage ##
+## 2. Useage ##  
+**1) For training DBD-Net.**  
+
+* Put the `BSDS500 (.jpg)` folder (including training set (200), validation set (100) and test set (200)) into `./dataset/train/`.  
+* e.g. If you want to train DBD-Net at sampling rate τ = 0.1 with GPU No.0, please run the following command. The train set will be automatically packaged and our DBD-Net will be trained with default parameters (Make sure you have enough GPU RAM):  
+```
+python train.py --device 0 --rate 0.1
+```
+* Also you can also run our shell script directly, it will automatically train the model at all sampling rates:  
+```
+sh train.sh
+```
+* Your trained models (.pth) will save in the `models` folder, it should contains `info.pth`, `model.pth`, `optimizer.pth` and `log.txt`, respectively represents the information during the training process, trained model parameters, optimizer information, and the reconstruction performance (PSNR, SSIM, LPIPS) of the verification set after one training epoch.  
+
+**2) For testing DBD-Net.**  
+* Put the `Set5 (.png)`, `Set14 (.png)`, `CBSD68 (.png)` and `Manga109 (.png)` folders into `./dataset/test/`.  
+* For example, if you want to test DBD-Net at sampling rate τ = 0.1 with GPU No.0, please run:  
+```
+python test.py --device 0 --rate 0.1
+```  
+* For ease of use, this command will perform image sampling and reconstruction upon `all the test datasets` at `one sampling rate`. This is an example of the test results from the command line:  
+```
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /usr/local/Caskroom/miniconda/base/envs/DL/lib/python3.8/site-packages/lpips/weights/v0.1/alex.pth
+r    bird.png
+r    butterfly.png
+r    head.png
+r    woman.png
+r    baby.png
+g    bird.png
+g    butterfly.png
+g    head.png
+g    woman.png
+g    baby.png
+b    bird.png
+b    butterfly.png
+b    head.png
+b    woman.png
+b    baby.png
+
+Set5 test done.
+```
