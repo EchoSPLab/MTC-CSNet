@@ -8,7 +8,7 @@ We adopt the [`BSDS500`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vis
 
 **2) Competting methods**  
 
-|Methods|Source|Type|
+|Methods|Sources|Type|
 |:----|:----|:----|
 | ![DT-SPL](https://latex.codecogs.com/svg.image?\textbf{DT-SPL}) | [Data Compress. Conf.](https://ieeexplore.ieee.org/document/5453522) | Traditional algorithm |
 | ![MH-SPL](https://latex.codecogs.com/svg.image?\textbf{MH-SPL}) | [Conf. Rec. Asilomar Conf. Signals Syst. Comput.](https://ieeexplore.ieee.org/document/6190204) | Traditional algorithm |
@@ -20,13 +20,17 @@ We adopt the [`BSDS500`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vis
 
 **3) Performance demonstrates**  
 
-I.Visual comparisons under `Gaussian noise` with variance `σ = 0.02` in the case of dataset `CBSD68`, `τ ∈ {0.01, 0.04, 0.10, 0.25}`. The results of PSNR, SSIM and LPIPS are given below the reconstructed images:  
+**I.** Visual comparisons under `Gaussian noise` with variance `σ = 0.02` in the case of dataset `CBSD68`, `τ ∈ {0.01, 0.04, 0.10, 0.25}`. The results of PSNR, SSIM and LPIPS are given below the reconstructed images:  
 
 <div align=center><img src="https://github.com/EchoSPLab/DBD-Net/blob/master/demo_images/SP.png"/></div>  
 
-II.The recovery image under `salt-and-pepper noise` (the `SNR` of the first row and second row are `0.99 and 0.95`, respectively) in the case of dataset `Set5`, sampling rate `τ = 0.1`. PSNR, SSIM and LPIPS are given below the reconstructed images:  
+**II.** The recovery image under `salt-and-pepper noise` (the `SNR` of the first row and second row are `0.99 and 0.95`, respectively) in the case of dataset `Set5`, sampling rate `τ = 0.1`. PSNR, SSIM and LPIPS are given below the reconstructed images:  
 
 <div align=center><img src="https://github.com/EchoSPLab/DBD-Net/blob/master/demo_images/GA.png"/></div>  
+
+**III.** PSNR and LPIPS comparisons under `Gaussian noise` with variance `σ ∈ {0.01, 0.02, 0.05}` in the case of dataset `Manga109` at `τ = 0.01` (first row), and dataset `CBSD68` at `τ = 0.04` (second row), respectively.
+
+<div align=center><img src="https://github.com/EchoSPLab/DBD-Net/blob/master/demo_images/boxes.png"/></div>  
 
 ## 2. Useage ##
 Project structure:  
