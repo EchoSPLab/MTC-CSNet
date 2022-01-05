@@ -13,15 +13,17 @@ We adopt the [`BSDS500`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vis
 |    |-train  
 |        |-BSDS500 (.jpg)  
 |    |-val  
-|        |-Set11 (.png)  
+|        |-Set11  
 |            |-r (.png)  
 |            |-g (.png)  
 |            |-b (.png) 
+|            |-(.png)  
 |    |-test  
-|        |-Set5 (.png)  
+|        |-Set5  
 |            |-r (.png)  
 |            |-g (.png)  
-|            |-b (.png)  
+|            |-b (.png) 
+|            |-(.png)  
 |        |-Set14 (.png)  
 |            |-... (Same as Set5)  
 |        |-CBSD68 (.png)  
