@@ -24,7 +24,7 @@ DBD-Net
 |            |-b (.png)  
 |        |-Set14 (.png)  
 |            |-... (Same as Set5)  
-|        |-CBSDS68 (.png)  
+|        |-CBSD68 (.png)  
 |            |-... (Same as Set5)  
 |        |-Manga109 (.png)  
 |            |-... (Same as Set5)  
