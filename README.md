@@ -24,9 +24,9 @@ DBD-Net
 |            |-b (.png)  
 |        |-Set14 (.png)  
 |            |-... (Same as Set5)  
-|        |-BSDS100 (.png)  
+|        |-CBSDS68 (.png)  
 |            |-... (Same as Set5)  
-|        |-Urban100 (.png)  
+|        |-Manga109 (.png)  
 |            |-... (Same as Set5)  
 |-models
 |    |-__init__.py  
