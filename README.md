@@ -4,7 +4,7 @@ For any questions, feel free to contact us: shen65536@mail.nwpu.edu.cn
 ## 1. Introduction ##
 **1) Datasets**  
 
-We adopt the [`BSDS500`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html) as the training set [`Set11`](https://github.com/KuldeepKulkarni/ReconNet) as the validation set. The tests (in channel-by-channel manner) are conducted using the [`Set5`](http://people.rennes.inria.fr/Aline.Roumy/results/SR_BMVC12.html), [`Set14`](https://huggingface.co/datasets/eugenesiow/Set14), [`CBSD68`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/) and [`Manga109`](http://www.manga109.org/en/) datasets.  
+Training set: [`BSDS500`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html), validation set: [`Set11`](https://github.com/KuldeepKulkarni/ReconNet), testing sets: [`Set5`](http://people.rennes.inria.fr/Aline.Roumy/results/SR_BMVC12.html), [`Set14`](https://huggingface.co/datasets/eugenesiow/Set14), [`CBSD68`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/) and [`Manga109`](http://www.manga109.org/en/).  
 
 **2）Project structure**
 ```
