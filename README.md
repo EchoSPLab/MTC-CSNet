@@ -92,7 +92,7 @@ python train.py --device 0 --rate 0.1
 ```
 sh train.sh
 ```
-* Your trained models (.pth) will save in the `models` folder, it should contains `info.pth`, `model.pth`, `optimizer.pth` and `log.txt`, respectively represents the information during the training process, trained model parameters, optimizer information, and the reconstruction performance (PSNR, SSIM, LPIPS) of the verification set after one training epoch.  
+* Your trained models (.pth) will save in the `models` folder, it should contain `info.pth`, `model.pth`, `optimizer.pth` and `log.txt`, respectively represent the information during the training process, trained model parameters, optimizer information, and the reconstruction performance (PSNR, SSIM, LPIPS) of the verification set after one training epoch.  
 
 **2) For testing DBD-Net.**  
 * Put the `Set5 (.png)`, `Set14 (.png)`, `CBSD68 (.png)` and `Manga109 (.png)` folders into `./dataset/test/`.  
