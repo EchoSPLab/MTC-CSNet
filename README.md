@@ -71,13 +71,9 @@ Training set: [`BSDS500`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vi
 
 **I.** Visual comparisons under `Gaussian noise` with variance `σ = 0.02` in the case of dataset `CBSD68`, `τ ∈ {0.01, 0.04, 0.10, 0.25}`. The results of PSNR, SSIM and LPIPS are given below the reconstructed images:  
 
-<div align=center><img src="https://github.com/EchoSPLab/DBD-Net/blob/master/demo_images/SP.png"/></div>  
+<div align=center><img src="https://github.com/EchoSPLab/DBD-Net/blob/master/demo_images/SP.png"/></div>   
 
-**II.** The recovery image under `salt-and-pepper noise` (the `SNR` of the first row and second row are `0.99 and 0.95`, respectively) in the case of dataset `Set5`, sampling rate `τ = 0.1`. PSNR, SSIM and LPIPS are given below the reconstructed images:  
-
-<div align=center><img src="https://github.com/EchoSPLab/DBD-Net/blob/master/demo_images/GA.png"/></div>  
-
-**III.** PSNR and LPIPS comparisons under `Gaussian noise` with variance `σ ∈ {0.01, 0.02, 0.05}` in the case of dataset `Manga109` at `τ = 0.01` (first row), and dataset `CBSD68` at `τ = 0.04` (second row), respectively.
+**II.** PSNR and LPIPS comparisons under `Gaussian noise` with variance `σ ∈ {0.01, 0.02, 0.05}` in the case of dataset `Manga109` at `τ = 0.01` (first row), and dataset `CBSD68` at `τ = 0.04` (second row), respectively.
 
 <div align=center><img src="https://github.com/EchoSPLab/DBD-Net/blob/master/demo_images/boxes.png"/></div>  
 
