@@ -12,6 +12,7 @@ Training set: [`BSDS500`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vi
 |-dataset
 |    |-train  
 |        |-BSDS500 (.jpg)  
+|        |-VOC2012 (.jpg)  
 |    |-val  
 |        |-Set11  
 |            |-r (.png)  
