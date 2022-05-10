@@ -1,5 +1,5 @@
 # DBD-Net
-This repository is the `pytorch` code for our paper `"DBD-Net: A Dual-Branch Decoding Network for Noisy Image Compressed Sensing"`.  
+This repository is the `pytorch` code for our paper `"MTC-CSNet: Marrying Transformer and Convolution for Image Compressed Sensing"`.  
 For any questions, feel free to contact us: shen65536@mail.nwpu.edu.cn  
 ## 1. Introduction ##
 **1) Datasets**  
@@ -8,7 +8,7 @@ Training set: [`BSDS500`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vi
 
 **2）Project structure**
 ```
-(DBD-Net)
+(MTC-CSNet)
 |-dataset
 |    |-train  
 |        |-BSDS500 (.jpg)  
@@ -58,13 +58,13 @@ Training set: [`BSDS500`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vi
 
 |Methods|Sources|Type|
 |:----|:----|:----|
-| ![DT-SPL](https://latex.codecogs.com/svg.image?\textbf{DT-SPL}) | [Data Compress. Conf.](https://ieeexplore.ieee.org/document/5453522) | Traditional algorithm |
 | ![MH-SPL](https://latex.codecogs.com/svg.image?\textbf{MH-SPL}) | [Conf. Rec. Asilomar Conf. Signals Syst. Comput.](https://ieeexplore.ieee.org/document/6190204) | Traditional algorithm |
 | ![GSR](https://latex.codecogs.com/svg.image?\textbf{GSR}) | [Trans. Image Process.](https://ieeexplore.ieee.org/document/6814320) | Traditional algorithm |
 | ![ReconNet](https://latex.codecogs.com/svg.image?\textbf{ReconNet})| [Conf. Comput. Vis. Pattern Recog.](https://ieeexplore.ieee.org/document/7780424/) | Deep-learning Model |
 | ![ISTA-Net (plus)](https://latex.codecogs.com/svg.image?\textbf{ISTA-Net}^{&plus;}) | [Conf. Comput. Vis. Pattern Recog.](https://ieeexplore.ieee.org/document/8578294) | Deep-learning Model |
-| ![AMP-Net-9BM](https://latex.codecogs.com/svg.image?\textbf{AMP-Net-9BM}) | [Trans. Image Process.](https://ieeexplore.ieee.org/document/9298950) | Deep-learning Model |
+| ![AMP-Net](https://latex.codecogs.com/svg.image?\textbf{AMP-Net}) | [Trans. Image Process.](https://ieeexplore.ieee.org/document/9298950) | Deep-learning Model |
 | ![CSNet (plus)](https://latex.codecogs.com/svg.image?\textbf{CSNet}^{&plus;}) | [Trans. Image Process.](https://ieeexplore.ieee.org/document/8765626/) | Deep-learning Model |
+| ![AutoBCS](https://latex.codecogs.com/svg.image?\textbf{AutoBCS}) | [Trans. Cybern.](https://ieeexplore.ieee.org/document/9632453) | Deep-learning Model |
 
 **4) Performance demonstrates**  
 
