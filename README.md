@@ -73,15 +73,15 @@ Training set: [`BSDS500`](https://www2.eecs.berkeley.edu/Research/Projects/CS/vi
 
 <div align=center><img src="https://github.com/EchoSPLab/MTC-CSNet/blob/master/demo_images/GA.png"/></div>   
 
-**II.** PSNR and LPIPS comparisons under `Gaussian noise` with variance `σ ∈ {0.01, 0.02, 0.05}` in the case of dataset `Manga109` at `τ = 0.01` (first row), and dataset `CBSD68` at `τ = 0.04` (second row), respectively.
+**II.** PSNR and LPIPS comparisons under `Gaussian noise` with variance `σ ∈ {0.01, 0.05}` in the case of dataset `Manga109` at `τ = 0.01`.
 
 <div align=center><img src="https://github.com/EchoSPLab/MTC-CSNet/blob/master/demo_images/boxes.png"/></div>  
 
 ## 2. Useage ##  
-**1) For training DBD-Net.**  
+**1) For training MTC-CSNet.**  
 
-* Put the `BSDS500 (.jpg)` folder (including training set (200), validation set (100) and test set (200)) into `./dataset/train/`.  
-* e.g. If you want to train DBD-Net at sampling rate τ = 0.1 with GPU No.0, please run the following command. The train set will be automatically packaged and our DBD-Net will be trained with default parameters (Make sure you have enough GPU RAM):  
+* Put the `BSDS500 (.jpg)` and `VOC2012 (.jpg)` into `./dataset/train/`.  
+* e.g. If you want to train MTC-CSNet at sampling rate τ = 0.1 with GPU No.0, please run the following command. The train set will be automatically packaged and our MTC-CSNet will be trained with default parameters (Make sure you have enough GPU RAM):  
 ```
 python train.py --device 0 --rate 0.1
 ```
@@ -91,9 +91,9 @@ sh train.sh
 ```
 * Your trained models (.pth) will save in the `models` folder, it should contain `info.pth`, `model.pth`, `optimizer.pth` and `log.txt`, respectively represent the information during the training process, trained model parameters, optimizer information, and the reconstruction performance (PSNR, SSIM, LPIPS) of the verification set after one training epoch.  
 
-**2) For testing DBD-Net.**  
+**2) For testing MTC-CSNet.**  
 * Put the `Set5 (.png)`, `Set14 (.png)`, `CBSD68 (.png)` and `Manga109 (.png)` folders into `./dataset/test/`.  
-* For example, if you want to test DBD-Net at sampling rate τ = 0.1 with GPU No.0, please run:  
+* For example, if you want to test MTC-CSNet at sampling rate τ = 0.1 with GPU No.0, please run:  
 ```
 python test.py --device 0 --rate 0.1
 ```  
@@ -122,4 +122,4 @@ Set5 test done.
 * After that, the results of all tests will be saved to `./gene_images/`. `recon` folder includes all the reconstructed images, `sum.txt` shows the average results of the test set, `detail.txt` shows the Each result of the test set.  
 ## End ##  
 
-We appreciate your reading and attention. If you want to see more results and details about our DBD-Net, please refer to our paper.  
+We appreciate your reading and attention. If you want to see more results and details about our MTC-CSNet, please refer to our paper.  
