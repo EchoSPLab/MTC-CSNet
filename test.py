@@ -218,5 +218,5 @@ if __name__ == "__main__":
     # for rate in (0.01, 0.04, 0.1, 0.25):
     rate = opt_test.rate
     config = utils.GetConfig(ratio=rate, device=opt_test.device)
-    net = models.DPD_Net(config).to(config.device).eval()
+    net = models.Net(config).to(config.device).eval()
     evaluate(config, net)
