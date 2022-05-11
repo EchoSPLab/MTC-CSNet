@@ -37,7 +37,7 @@ def main():
     print("Data loading...")
     torch.cuda.empty_cache()
     dataset_train = utils.train_loader(config)
-    net = models.DPD_Net(config).to(config.device)
+    net = models.Net(config).to(config.device)
     net.train()
 
     optimizer = optim.Adam(net.parameters(), lr=10e-3)
