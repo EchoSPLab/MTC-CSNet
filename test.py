@@ -46,7 +46,7 @@ def evaluate(config, net):
 
 
 def eva(config, net, flag=False):
-    f_names = ["Set5", "Set14", "CBSD68", "Manga109"]  # "Set5", "Set14", "CBSD68", "Manga109"
+    f_names = ["Set5", ]  # "Set5", "Set14", "CBSD68", "Manga109"
     if flag:
         f_names = ["Set11", ]
     for folder in f_names:
