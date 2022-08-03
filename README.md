@@ -120,5 +120,3 @@ Set5 test done.
 ```
 * After that, the results of all tests will be saved to `./gene_images/`. `recon` folder includes all the reconstructed images, `sum.txt` shows the average results of the test set, `detail.txt` shows the Each result of the test set.  
 ## End ##  
-
-We appreciate your reading and attention. If you want to see more results and details about our MTC-CSNet, please refer to our paper.  
