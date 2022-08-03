@@ -1,6 +1,5 @@
 # MTC-CSNet
 This repository is the `pytorch` code for our paper `"MTC-CSNet: Marrying Transformer and Convolution for Image Compressed Sensing"`.  
-For any questions, feel free to contact us: shen65536@mail.nwpu.edu.cn  
 ## 1. Introduction ##
 **1) Datasets**  
 
